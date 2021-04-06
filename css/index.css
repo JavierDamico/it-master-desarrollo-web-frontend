@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button {
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+#first-nav {
+  background: lightgray;
+  text-align: right;
+  padding: 12px;
+}
+
+#second-nav {
+  padding: 12px;
+  background: white;
+}
+
+#second-nav img {
+  height: 60px;
+}
+
+#banner {
+  text-align: center;
+  padding: 80px;
+  /* background: rgb(91, 189, 228); */
+  background-image: url(https://placeimg.com/1000/300/tech);
+  color: white;
+}
+
+#banner h1,
+#banner button {
+  margin: 12px;
+}
+
+#banner button {
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 12px 24px;
+}
+
+#banner h1 {
+  font-size: 60px;
+}
+
+#items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  padding: 48px;
+  
+}
+
+.item-product {
+  /* margin: 12px; */
+  width: 23%;
+  margin: 12px auto;
+  border: 1px solid #999;
+  text-align: center;
+}
+#items div img {
+  width: 100%;
+}
+
+#items div p {
+  margin: 12px;
+  line-height: 24px;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+.precio-final {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.descuento {
+  color: forestgreen;
+}
+
+.tachado,
+.precio-final,
+.descuento {
+  display: block;
+}
+
+#footer {
+  height: 200px;
+  background: lightgray;
+}
+
+.paginacion {
+  background: goldenrod;
+  padding: 12px 24px;
+  border: none;
+}
+
+.paginacion:hover {
+  font-weight: bold;
+  box-shadow: gray 3px 3px 3px;
+}
