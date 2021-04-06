@@ -56,18 +56,17 @@ button {
   
 }
 
-.item-product {
-  /* margin: 12px; */
-  width: 23%;
+#items .item-product {
+  width: 24%;
   margin: 12px auto;
   border: 1px solid #999;
   text-align: center;
 }
-#items div img {
+#items .item-product img {
   width: 100%;
 }
 
-#items div p {
+#items .item-product p {
   margin: 12px;
   line-height: 24px;
 }
@@ -95,11 +94,6 @@ button {
   display: block;
 }
 
-#footer {
-  height: 200px;
-  background: lightgray;
-}
-
 .paginacion {
   background: goldenrod;
   padding: 12px 24px;
@@ -110,3 +104,9 @@ button {
   font-weight: bold;
   box-shadow: gray 3px 3px 3px;
 }
+
+#footer {
+  height: 200px;
+  background: lightgray;
+}
+
