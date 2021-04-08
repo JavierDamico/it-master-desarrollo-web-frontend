@@ -3,11 +3,26 @@
   padding: 0;
 }
 
-body,
-button {
-  font-family: 'Work Sans', sans-serif;
+a {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 3px;
 }
 
+/* a:visited {
+  color: #999;
+} */
+
+a:hover {
+  /*text-decoration: underline;*/
+  border: 1px solid gray;
+  color: red;
+}
+
+body,
+button {
+  font-family: "Work Sans", sans-serif;
+}
 
 #first-nav {
   background: lightgray;
@@ -16,11 +31,14 @@ button {
 }
 
 #second-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 12px;
   background: white;
 }
 
-#second-nav img {
+#second-nav .logo {
   height: 60px;
 }
 
@@ -38,7 +56,7 @@ button {
 }
 
 #banner button {
-  border: 3px solid white;
+  border: 1px solid lightblue;
   border-radius: 3px;
   padding: 12px 24px;
 }
@@ -47,13 +65,16 @@ button {
   font-size: 60px;
 }
 
+#banner .overlay {
+  background: rgba(100, 100, 100, .4);
+}
+
 #items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   /* flex-direction: column; */
   padding: 48px;
-  
 }
 
 #items .item-product {
@@ -68,7 +89,7 @@ button {
 
 #items .item-product p {
   margin: 12px;
-  line-height: 24px;
+  line-height: 32px;
 }
 
 .negrita {
@@ -96,13 +117,13 @@ button {
 
 .paginacion {
   background: goldenrod;
-  padding: 12px 24px;
+  padding: 12px 48px;
   border: none;
 }
 
 .paginacion:hover {
   font-weight: bold;
-  box-shadow: gray 3px 3px 3px;
+  box-shadow: gray 3px 3px 6px;
 }
 
 #footer {
@@ -110,3 +131,61 @@ button {
   background: lightgray;
 }
 
+@media screen and (max-width: 768px) {
+  #banner {
+    padding: 20px;
+  }
+
+  #banner h1 {
+    font-size: 36px;
+  }
+
+  #items {
+    padding: 24px;
+  }
+
+  #items .item-product {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #second-nav .logo {
+    height: 36px;
+  }
+
+  #second-nav .second-nav-menu {
+    position: relative;
+  }
+
+  #second-nav .second-nav-links {
+    display: none;
+    position: absolute;
+    top: 36px;
+    right: 0px;
+    background: white;
+  }
+
+  #second-nav .second-nav-hamburger {
+    border: 1px solid gray;
+    text-align: center;
+  }
+
+  #second-nav .second-nav-hamburger:hover + .second-nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  #banner {
+    display: none;
+  }
+
+  #items {
+    padding: 12px;
+  }
+
+  #items .item-product {
+    width: 100%;
+  }
+}
