@@ -67,9 +67,17 @@ var links = [
 ];
 
 for (var i = 0; i < links.length; i++) {
-    linksContainer.innerHTML +=
-        '<a href="' + links[i].href + '">' + links[i].name + "</a>";
+    linksContainer.innerHTML += generateLink(links[i])
+        
 }
+
+function generateLink(link) {
+    console.log(link)
+    return '<a href="' + links[i].href + '">' + links[i].name + "</a>";
+}
+
+
+
 
 var itemsContainer = document.querySelector("#items");
 
