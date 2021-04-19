@@ -15,21 +15,21 @@ console.log(mixto.length);
 //desde - hasta - salto
 
 for (var i = 0; i < 9; i++) {
-    console.log(i);
+  console.log(i);
 }
 
 for (var i = 0; i < mixto.length; i++) {
-    console.log(mixto[i]);
+  console.log(mixto[i]);
 }
 
 // Objetos (array asociativo) se usan {}
 
 var usuario = {
-    primerNombre: "Javier",
-    segundoNombre: "Omar",
-    apellido: "Damico",
-    altura: 1.75,
-    esExtranjero: false,
+  primerNombre: "Javier",
+  segundoNombre: "Omar",
+  apellido: "Damico",
+  altura: 1.75,
+  esExtranjero: false,
 };
 
 // usuario.primerNombre -> asi se usa
@@ -48,100 +48,96 @@ var linksContainer = document.querySelector(".second-nav-links");
 // ]
 
 var links = [
-    {
-        href: "#home",
-        name: "Home",
-    },
-    {
-        href: "#productos",
-        name: "Productos",
-    },
-    {
-        href: "#nosotros",
-        name: "Nosotros",
-    },
-    {
-        href: "#contacto",
-        name: "Contacto",
-    },
+  {
+    href: "#home",
+    name: "Home",
+  },
+  {
+    href: "#productos",
+    name: "Productos",
+  },
+  {
+    href: "#nosotros",
+    name: "Nosotros",
+  },
+  {
+    href: "#contacto",
+    name: "Contacto",
+  },
 ];
 
 for (var i = 0; i < links.length; i++) {
-    linksContainer.innerHTML += generateLink(links[i])
-        
+  linksContainer.innerHTML += generateLink(links[i]);
 }
 
 function generateLink(link) {
-    console.log(link)
-    return '<a href="' + links[i].href + '">' + links[i].name + "</a>";
+  console.log(link);
+  return '<a href="' + links[i].href + '">' + links[i].name + "</a>";
 }
-
-
-
 
 var itemsContainer = document.querySelector("#items");
 
 var items = [
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
-    {
-        foto: "https://placeimg.com/400/400/tech",
-        texto:
-            "Product category one Product category one Product category one Product category one Product category one",
-    },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
+  {
+    foto: "https://placeimg.com/400/400/tech",
+    texto:
+      "Product category one Product category one Product category one Product category one Product category one",
+  },
 ];
 
 // for (var i = 0; i < items.length; i++) {
@@ -154,15 +150,22 @@ var items = [
 //     itemsContainer.innerHTML += html
 // }
 
+// for (var i = 0; i < items.length; i++) {
+//     itemsContainer.innerHTML +=
+//         '<div class="item-product">' +
+//         '<img src="' +
+//         items[i].foto +
+//         '" alt="Logo Google">' +
+//         "<p><b>Product category one</b>" +
+//         items[i].texto +
+//         "</p>" +
+//         "</div>";
+// console.log(itemsContainer)
+// }
+
+// Esto es otra forma de hacer lo mismo de arriba sin tanta concatenacion
+
 for (var i = 0; i < items.length; i++) {
-    itemsContainer.innerHTML +=
-        '<div class="item-product">' +
-        '<img src="' +
-        items[i].foto +
-        '" alt="Logo Google">' +
-        "<p><b>Product category one</b>" +
-        items[i].texto +
-        "</p>" +
-        "</div>";
-    // console.log(itemsContainer)
+  itemsContainer.innerHTML += `<div class="item-product"><img src="${items[i].foto}" alt="Logo Google">
+    <p><b>Product category one</b>${items[i].texto}</p></div>`;
 }
