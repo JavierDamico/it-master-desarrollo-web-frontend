@@ -18,10 +18,6 @@ var cantidadDeLetras = nombreCompleto.length
 
 console.log(cantidadDeLetras)
 
-
-
-
-
 //Tipo de dato number
 var edad = 39
 
@@ -66,9 +62,6 @@ aceptar.addEventListener('click', function () {
     cartelCookie.style.display = 'none'
 })
 
-// document.querySelector('.cookie').style.display = 'none'
-
-
 
 //Envio de email
 
@@ -83,3 +76,5 @@ botonDeEnviar.addEventListener('click', function(){
 
 
 })
+
+console.log(botonDeEnviar)
