@@ -29,6 +29,14 @@ var calculadora = {
     this.resultado -= a - b;
   },
 
+  multiplicar(a = 0, b = 0) {
+    this.resultado *= a * b;
+  },
+
+  dividir(a = 0, b = 0) {
+    this.resultado /= a / b;
+  },
+
   obtenerResultado() {
     return this.resultado;
   },
