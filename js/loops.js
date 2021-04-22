@@ -224,7 +224,7 @@ function mostrarItems(q) {
 }
 
 paginacion.addEventListener("click", function () {
-  cantidadDeResultados = 8;
+  cantidadDeResultados;
   mostrarItems(cantidadDeResultados);
 });
 

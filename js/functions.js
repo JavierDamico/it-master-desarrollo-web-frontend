@@ -21,7 +21,7 @@ nombreCompleto('Javier', 'Damico') */
 var calculadora = {
   resultado: 0,
 
-  sumar(a = 0, b = 0) {
+  sumar(a = 0, b = 0) { //los parametros se igualan a 0 en el caso de que no se pasen 1 o ambos como datos para que la funcion no devuelva NaN.
     this.resultado += a + b;
   },
 
