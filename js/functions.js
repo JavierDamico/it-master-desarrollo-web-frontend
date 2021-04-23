@@ -21,7 +21,8 @@ nombreCompleto('Javier', 'Damico') */
 var calculadora = {
   resultado: 0,
 
-  sumar(a = 0, b = 0) { //los parametros se igualan a 0 en el caso de que no se pasen 1 o ambos como datos para que la funcion no devuelva NaN.
+  sumar(a = 0, b = 0) {
+    //los parametros se igualan a 0 en el caso de que no se pasen 1 o ambos como datos para que la funcion no devuelva NaN.
     this.resultado += a + b;
   },
 
@@ -76,3 +77,24 @@ console.log(usuario);
 
 var profesor = nombreCompleto("Cosme", "", "Fulanito");
 console.log(profesor);
+
+var users = [];
+
+fetch("https://jsonplaceholder.typicode.com/todos/users")
+  .then(function (x) {
+    return x.json();
+  })
+
+  .then(function (json) {
+    console.log(json);
+  });
+
+var user = {
+  getFullName() {
+    return this.firstName + " " + this.lastName;
+  },
+};
+
+for (i = 0; i < users.length; i++) {
+  users[i] = { ...users[i], ...user }; //recorro la variable users y a cada obj le agrego la funcion user.
+}
